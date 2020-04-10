@@ -60,7 +60,7 @@ ms.locfileid: "74533131"
 |“\@{pipeline().parameters.myNumber}”| `42`를 *문자열*로 반환합니다.|  
 |"Answer is: @{pipeline().parameters.myNumber}"| `Answer is: 42` 문자열을 반환합니다.|  
 |“\@concat(‘Answer is: ’, string(pipeline().parameters.myNumber))”| `Answer is: 42` 문자열을 반환합니다.|  
-|"대답은 다음과 같습니다. \@\@{pipeline().parameters.myNumber}"| `Answer is: @{pipeline().parameters.myNumber}` 문자열을 반환합니다.|  
+|"Answer is: \@\@{pipeline().parameters.myNumber}"| `Answer is: @{pipeline().parameters.myNumber}` 문자열을 반환합니다.|  
   
 ## <a name="examples"></a>예
 
@@ -155,16 +155,16 @@ ms.locfileid: "74533131"
 | --------------- | ---- |
 | [concat](control-flow-expression-language-functions.md#concat) | 둘 이상의 문자열을 결합하고 결합된 문자열을 반환합니다. |
 | [endsWith](control-flow-expression-language-functions.md#endswith) | 문자열이 지정된 하위 문자열로 끝나는지 여부를 확인합니다. |
-| [Guid](control-flow-expression-language-functions.md#guid) | 전역적으로 고유한 식별자(GUID)를 문자열로 생성합니다. |
+| [guid](control-flow-expression-language-functions.md#guid) | 전역적으로 고유한 식별자(GUID)를 문자열로 생성합니다. |
 | [indexOf](control-flow-expression-language-functions.md#indexof) | 하위 문자열에 대한 시작 위치를 반환합니다. |
 | [lastIndexOf](control-flow-expression-language-functions.md#lastindexof) | 마지막으로 나오는 부분 문자열의 시작 위치를 반환합니다. |
-| [교체](control-flow-expression-language-functions.md#replace) | 하위 문자열을 지정된 문자열로 바꾸고 업데이트된 문자열을 반환합니다. |
-| [분할](control-flow-expression-language-functions.md#split) | 원래 문자열에 지정된 구분 기호 문자를 기준으로 하여 더 큰 문자열의 하위 문자열을 포함하는 배열(쉼표로 구분됨)을 반환합니다. |
-| [시작](control-flow-expression-language-functions.md#startswith) | 문자열이 특정 하위 문자열로 시작하는지 검사합니다. |
-| [부분](control-flow-expression-language-functions.md#substring) | 지정된 위치에서 시작하여 문자열에서 문자를 반환합니다. |
-| [로어](control-flow-expression-language-functions.md#toLower) | 문자열을 소문자 형식으로 반환합니다. |
+| [replace](control-flow-expression-language-functions.md#replace) | 하위 문자열을 지정된 문자열로 바꾸고 업데이트된 문자열을 반환합니다. |
+| [split](control-flow-expression-language-functions.md#split) | 원래 문자열에 지정된 구분 기호 문자를 기준으로 하여 더 큰 문자열의 하위 문자열을 포함하는 배열(쉼표로 구분됨)을 반환합니다. |
+| [startsWith](control-flow-expression-language-functions.md#startswith) | 문자열이 특정 하위 문자열로 시작하는지 검사합니다. |
+| [substring](control-flow-expression-language-functions.md#substring) | 지정된 위치에서 시작하여 문자열에서 문자를 반환합니다. |
+| [toLower](control-flow-expression-language-functions.md#toLower) | 문자열을 소문자 형식으로 반환합니다. |
 | [toUpper](control-flow-expression-language-functions.md#toUpper) | 문자열을 대문자 형식으로 반환합니다. |
-| [트림](control-flow-expression-language-functions.md#trim) | 문자열에서 선행 및 후행 공백을 제거하고 업데이트된 문자열을 반환합니다. |
+| [trim](control-flow-expression-language-functions.md#trim) | 문자열에서 선행 및 후행 공백을 제거하고 업데이트된 문자열을 반환합니다. |
 
 ## <a name="collection-functions"></a>컬렉션 함수
 
@@ -172,16 +172,16 @@ ms.locfileid: "74533131"
 
 | 컬렉션 함수 | Task |
 | ------------------- | ---- |
-| [포함](control-flow-expression-language-functions.md#contains) | 컬렉션에 특정 항목이 있는지 검사합니다. |
-| [빈](control-flow-expression-language-functions.md#empty) | 컬렉션이 비어 있는지 검사합니다. |
-| [첫 번째](control-flow-expression-language-functions.md#first) | 컬렉션에서 첫 번째 항목을 반환합니다. |
-| [교차로](control-flow-expression-language-functions.md#intersection) | 지정한 컬렉션에서 공통 항목*만* 있는 컬렉션을 반환합니다. |
-| [가입](control-flow-expression-language-functions.md#join) | 지정된 문자로 구분되는 배열에서 *모든* 항목이 들어 있는 문자열을 반환합니다. |
-| [마지막](control-flow-expression-language-functions.md#last) | 컬렉션에서 마지막 항목을 반환합니다. |
+| [contains](control-flow-expression-language-functions.md#contains) | 컬렉션에 특정 항목이 있는지 검사합니다. |
+| [empty](control-flow-expression-language-functions.md#empty) | 컬렉션이 비어 있는지 검사합니다. |
+| [first](control-flow-expression-language-functions.md#first) | 컬렉션에서 첫 번째 항목을 반환합니다. |
+| [intersection](control-flow-expression-language-functions.md#intersection) | 지정한 컬렉션에서 공통 항목*만* 있는 컬렉션을 반환합니다. |
+| [join](control-flow-expression-language-functions.md#join) | 지정된 문자로 구분되는 배열에서 *모든* 항목이 들어 있는 문자열을 반환합니다. |
+| [last](control-flow-expression-language-functions.md#last) | 컬렉션에서 마지막 항목을 반환합니다. |
 | [length](control-flow-expression-language-functions.md#length) | 문자열 또는 배열에서 항목 수를 반환합니다. |
-| [건너뛸](control-flow-expression-language-functions.md#skip) | 컬렉션 앞의 항목을 제거하고 *다른 모든* 항목을 반환합니다. |
-| [테이크](control-flow-expression-language-functions.md#take) | 컬렉션 앞에서 항목을 반환합니다. |
-| [연합](control-flow-expression-language-functions.md#union) | 지정한 컬렉션에서 *모든* 항목이 있는 컬렉션을 반환합니다. | 
+| [skip](control-flow-expression-language-functions.md#skip) | 컬렉션 앞의 항목을 제거하고 *다른 모든* 항목을 반환합니다. |
+| [take](control-flow-expression-language-functions.md#take) | 컬렉션 앞에서 항목을 반환합니다. |
+| [union](control-flow-expression-language-functions.md#union) | 지정한 컬렉션에서 *모든* 항목이 있는 컬렉션을 반환합니다. | 
 
 ## <a name="logical-functions"></a>논리 함수  
 
@@ -189,15 +189,15 @@ ms.locfileid: "74533131"
   
 | 논리 비교 함수 | Task |
 | --------------------------- | ---- |
-| [및](control-flow-expression-language-functions.md#and) | 모든 식이 true인지 확인합니다. |
+| [and](control-flow-expression-language-functions.md#and) | 모든 식이 true인지 확인합니다. |
 | [equals](control-flow-expression-language-functions.md#equals) | 두 값이 동일한지 확인합니다. |
 | [greater](control-flow-expression-language-functions.md#greater) | 첫 번째 값이 두 번째 값보다 큰지 검사합니다. |
 | [greaterOrEquals](control-flow-expression-language-functions.md#greaterOrEquals) | 첫 번째 값이 두 번째 값보다 크거나 같은지 검사합니다. |
 | [if](control-flow-expression-language-functions.md#if) | 식이 true인지 또는 false인지 검사합니다. 결과에 기반해 지정한 값을 반환합니다. |
-| [덜](control-flow-expression-language-functions.md#less) | 첫 번째 값이 두 번째 값보다 작은지 검사합니다. |
+| [less](control-flow-expression-language-functions.md#less) | 첫 번째 값이 두 번째 값보다 작은지 검사합니다. |
 | [lessOrEquals](control-flow-expression-language-functions.md#lessOrEquals) | 첫 번째 값이 두 번째 값보다 작거나 같은지 검사합니다. |
-| [하지 않습니다.](control-flow-expression-language-functions.md#not) | 식이 false인지 검사합니다. |
-| [또는](control-flow-expression-language-functions.md#or) | 최소 하나의 식이 true인지 검사합니다. |
+| [not](control-flow-expression-language-functions.md#not) | 식이 false인지 검사합니다. |
+| [or](control-flow-expression-language-functions.md#or) | 최소 하나의 식이 true인지 검사합니다. |
   
 ## <a name="conversion-functions"></a>변환 함수  
 
@@ -211,51 +211,51 @@ ms.locfileid: "74533131"
 
 | 변환 함수 | Task |
 | ------------------- | ---- |
-| [배열](control-flow-expression-language-functions.md#array) | 단일 지정 입력에서 배열을 반환합니다. 여러 입력의 경우 [createArray](control-flow-expression-language-functions.md#createArray)를 참조하십시오. |
-| [베이스64](control-flow-expression-language-functions.md#base64) | 문자열에 대한 base64로 인코딩된 버전을 반환합니다. |
+| [array](control-flow-expression-language-functions.md#array) | 단일 지정 입력에서 배열을 반환합니다. 여러 입력의 경우 [createArray](control-flow-expression-language-functions.md#createArray)를 참조하십시오. |
+| [base64](control-flow-expression-language-functions.md#base64) | 문자열에 대한 base64로 인코딩된 버전을 반환합니다. |
 | [base64ToBinary](control-flow-expression-language-functions.md#base64ToBinary) | Base64로 인코딩된 문자열에 대한 이진 버전을 반환합니다. |
 | [base64ToString](control-flow-expression-language-functions.md#base64ToString) | Base64로 인코딩된 문자열에 대한 문자열 버전을 반환합니다. |
-| [이진](control-flow-expression-language-functions.md#binary) | 입력 값에 대한 이진 버전을 반환합니다. |
+| [binary](control-flow-expression-language-functions.md#binary) | 입력 값에 대한 이진 버전을 반환합니다. |
 | [bool](control-flow-expression-language-functions.md#bool) | 입력 값에 대한 부울 버전을 반환합니다. |
 | [coalesce](control-flow-expression-language-functions.md#coalesce) | 하나 이상의 매개 변수에서 Null이 아닌 첫 번째 값을 반환합니다. |
-| [create배열](control-flow-expression-language-functions.md#createArray) | 여러 입력에서 배열을 반환합니다. |
-| [데이터우리](control-flow-expression-language-functions.md#dataUri) | 입력 값에 대한 데이터 URI를 반환합니다. |
+| [createArray](control-flow-expression-language-functions.md#createArray) | 여러 입력에서 배열을 반환합니다. |
+| [dataUri](control-flow-expression-language-functions.md#dataUri) | 입력 값에 대한 데이터 URI를 반환합니다. |
 | [dataUriToBinary](control-flow-expression-language-functions.md#dataUriToBinary) | 데이터 URI에 대한 이진 버전을 반환합니다. |
 | [dataUriToString](control-flow-expression-language-functions.md#dataUriToString) | 데이터 URI에 대한 문자열 버전을 반환합니다. |
 | [decodeBase64](control-flow-expression-language-functions.md#decodeBase64) | Base64로 인코딩된 문자열에 대한 문자열 버전을 반환합니다. |
 | [decodeDataUri](control-flow-expression-language-functions.md#decodeDataUri) | 데이터 URI에 대한 이진 버전을 반환합니다. |
 | [decodeUriComponent](control-flow-expression-language-functions.md#decodeUriComponent) | 디코딩된 버전으로 이스케이프 문자를 바꾸는 문자열을 반환합니다. |
 | [encodeUriComponent](control-flow-expression-language-functions.md#encodeUriComponent) | URL 안전하지 않은 문자를 이스케이프 문자로 대체하는 문자열을 반환합니다. |
-| [플 로트](control-flow-expression-language-functions.md#float) | 입력 값에 대해 부동 소수점 숫자를 반환합니다. |
-| [Int](control-flow-expression-language-functions.md#int) | 문자열에 대한 정수 버전을 반환합니다. |
-| [Json](control-flow-expression-language-functions.md#json) | JSON(JavaScript Object Notation) 형식 값 또는 문자열이나 XML에 대한 개체를 반환합니다. |
-| [문자열](control-flow-expression-language-functions.md#string) | 입력 값에 대한 문자열 버전을 반환합니다. |
+| [float](control-flow-expression-language-functions.md#float) | 입력 값에 대해 부동 소수점 숫자를 반환합니다. |
+| [int](control-flow-expression-language-functions.md#int) | 문자열에 대한 정수 버전을 반환합니다. |
+| [json](control-flow-expression-language-functions.md#json) | JSON(JavaScript Object Notation) 형식 값 또는 문자열이나 XML에 대한 개체를 반환합니다. |
+| [string](control-flow-expression-language-functions.md#string) | 입력 값에 대한 문자열 버전을 반환합니다. |
 | [uriComponent](control-flow-expression-language-functions.md#uriComponent) | 이스케이프 문자로 URL 안전하지 않은 문자를 대체하여 입력 값에 대한 URI로 인코딩된 버전을 반환합니다. |
 | [uriComponentToBinary](control-flow-expression-language-functions.md#uriComponentToBinary) | URI로 인코딩된 문자열에 대한 이진 버전을 반환합니다. |
 | [uriComponentToString](control-flow-expression-language-functions.md#uriComponentToString) | URI로 인코딩된 문자열에 대한 문자열 버전을 반환합니다. |
 | [xml](control-flow-expression-language-functions.md#xml) | 문자열에 대한 XML 버전을 반환합니다. |
-| [Xpath](control-flow-expression-language-functions.md#xpath) | XPath(XML 경로 언어) 식과 일치하는 노드 또는 값에 대한 XML을 확인하고 일치하는 노드 또는 값을 반환합니다. |
+| [xpath](control-flow-expression-language-functions.md#xpath) | XPath(XML 경로 언어) 식과 일치하는 노드 또는 값에 대한 XML을 확인하고 일치하는 노드 또는 값을 반환합니다. |
 
 ## <a name="math-functions"></a>수치 연산 함수  
  이 함수는 **integers** 및 **floats**의 숫자 형식에 사용할 수 있습니다.  
 
 | 수식 함수 | Task |
 | ------------- | ---- |
-| [추가](control-flow-expression-language-functions.md#add) | 두 숫자를 더한 결과를 반환합니다. |
+| [add](control-flow-expression-language-functions.md#add) | 두 숫자를 더한 결과를 반환합니다. |
 | [div](control-flow-expression-language-functions.md#div) | 두 숫자를 나눈 결과를 반환합니다. |
-| [최대](control-flow-expression-language-functions.md#max) | 숫자 또는 배열 집합에서 가장 높은 값을 반환합니다. |
-| [분](control-flow-expression-language-functions.md#min) | 숫자 또는 배열 집합에서 가장 낮은 값을 반환합니다. |
-| [모드](control-flow-expression-language-functions.md#mod) | 두 숫자를 나눈 나머지를 반환합니다. |
+| [max](control-flow-expression-language-functions.md#max) | 숫자 또는 배열 집합에서 가장 높은 값을 반환합니다. |
+| [min](control-flow-expression-language-functions.md#min) | 숫자 또는 배열 집합에서 가장 낮은 값을 반환합니다. |
+| [mod](control-flow-expression-language-functions.md#mod) | 두 숫자를 나눈 나머지를 반환합니다. |
 | [mul](control-flow-expression-language-functions.md#mul) | 두 숫자를 곱한 결과를 반환합니다. |
-| [랜드](control-flow-expression-language-functions.md#rand) | 지정된 범위에서 임의의 정수를 반환합니다. |
-| [범위](control-flow-expression-language-functions.md#range) | 지정한 정수에서 시작하는 정수 배열을 반환합니다. |
+| [rand](control-flow-expression-language-functions.md#rand) | 지정된 범위에서 임의의 정수를 반환합니다. |
+| [range](control-flow-expression-language-functions.md#range) | 지정한 정수에서 시작하는 정수 배열을 반환합니다. |
 | [sub](control-flow-expression-language-functions.md#sub) | 첫 번째 숫자에서 두 번째 숫자를 뺀 결과를 반환합니다. |
   
 ## <a name="date-functions"></a>날짜 함수  
 
 | 날짜 또는 시간 함수 | Task |
 | --------------------- | ---- |
-| [Adddays](control-flow-expression-language-functions.md#addDays) | 타임스탬프에 일 수를 더합니다. |
+| [adddays](control-flow-expression-language-functions.md#addDays) | 타임스탬프에 일 수를 더합니다. |
 | [addHours](control-flow-expression-language-functions.md#addHours) | 타임스탬프에 시간 수를 더합니다. |
 | [addMinutes](control-flow-expression-language-functions.md#addMinutes) | 타임스탬프에 분 수를 더합니다. |
 | [addSeconds](control-flow-expression-language-functions.md#addSeconds) | 타임스탬프에 초 수를 더합니다. |
@@ -263,9 +263,9 @@ ms.locfileid: "74533131"
 | [convertFromUtc](control-flow-expression-language-functions.md#convertFromUtc) | UTC(Universal Time Coordinated)의 타임스탬프를 대상 표준 시간대로 변환합니다. |
 | [convertTimeZone](control-flow-expression-language-functions.md#convertTimeZone) | 원본 표준 시간대의 타임스탬프를 대상 표준 시간대로 변환합니다. |
 | [convertToUtc](control-flow-expression-language-functions.md#convertToUtc) | 원본 표준 시간대의 타임스탬프를 UTC(Universal Time Coordinated)로 변환합니다. |
-| [일의 달](control-flow-expression-language-functions.md#dayOfMonth) | 타임 스탬프에서 월 구성 요소인 날짜를 반환합니다. |
+| [dayOfMonth](control-flow-expression-language-functions.md#dayOfMonth) | 타임 스탬프에서 월 구성 요소인 날짜를 반환합니다. |
 | [dayOfWeek](control-flow-expression-language-functions.md#dayOfWeek) | 타임 스탬프에서 주 구성 요소인 날짜를 반환합니다. |
-| [일의 연도](control-flow-expression-language-functions.md#dayOfYear) | 타임 스탬프에서 연 구성 요소인 날짜를 반환합니다. |
+| [dayOfYear](control-flow-expression-language-functions.md#dayOfYear) | 타임 스탬프에서 연 구성 요소인 날짜를 반환합니다. |
 | [formatDateTime](control-flow-expression-language-functions.md#formatDateTime) | 타임 스탬프에서 날짜를 반환합니다. |
 | [getFutureTime](control-flow-expression-language-functions.md#getFutureTime) | 지정한 시간 단위를 더한 현재 타임스탬프를 반환합니다. [addToTime](control-flow-expression-language-functions.md#addToTime)도 참조합니다. |
 | [getPastTime](control-flow-expression-language-functions.md#getPastTime) | 지정한 시간 단위를 뺀 현재 타임스탬프를 반환합니다. [subtractFromTime](control-flow-expression-language-functions.md#subtractFromTime)도 참조합니다. |
@@ -297,7 +297,7 @@ add(<summand_1>, <summand_2>)
 
 | 반환 값 | Type | Description |
 | ------------ | -----| ----------- |
-| <*결과 합계*> | 정수 또는 부동 소수점 수 | 지정한 숫자들을 더한 결과 |
+| <*result-sum*> | 정수 또는 부동 소수점 수 | 지정한 숫자들을 더한 결과 |
 ||||
 
 *예제*
@@ -322,17 +322,17 @@ addDays('<timestamp>', <days>, '<format>'?)
 
 | 매개 변수 | 필수 | Type | Description |
 | --------- | -------- | ---- | ----------- |
-| <*타임 스탬프*> | yes | String | 타임스탬프를 포함하는 문자열 |
-| <*일*> | yes | 정수 | 더할 양수 또는 음수 일 수 |
-| <*형식*> | 예 | String | [단일 형식 지정자](https://docs.microsoft.com/dotnet/standard/base-types/standard-date-and-time-format-strings) 또는 [사용자 지정 형식 패턴](https://docs.microsoft.com/dotnet/standard/base-types/custom-date-and-time-format-strings)입니다. 타임스탬프의 기본 형식은 ["o"](https://docs.microsoft.com/dotnet/standard/base-types/standard-date-and-time-format-strings)(yyyy-MM-ddTHH:mm:ss:fffffffK)입니다. 이 형식은 [ISO 8601](https://en.wikipedia.org/wiki/ISO_8601)을 준수하며 표준 시간대 정보를 보존합니다. |
+| <*timestamp*> | yes | String | 타임스탬프를 포함하는 문자열 |
+| <*days*> | yes | 정수 | 더할 양수 또는 음수 일 수 |
+| <*format*> | 예 | String | [단일 형식 지정자](https://docs.microsoft.com/dotnet/standard/base-types/standard-date-and-time-format-strings) 또는 [사용자 지정 형식 패턴](https://docs.microsoft.com/dotnet/standard/base-types/custom-date-and-time-format-strings)입니다. 타임스탬프의 기본 형식은 ["o"](https://docs.microsoft.com/dotnet/standard/base-types/standard-date-and-time-format-strings)(yyyy-MM-ddTHH:mm:ss:fffffffK)입니다. 이 형식은 [ISO 8601](https://en.wikipedia.org/wiki/ISO_8601)을 준수하며 표준 시간대 정보를 보존합니다. |
 |||||
 
-| 반환 값 | Type | Description |
+| Return value | Type | Description |
 | ------------ | ---- | ----------- |
-| <*업데이트된 타임스탬프*> | String | 타임스탬프 + 지정한 일 수  |
+| <*updated-timestamp*> | String | 타임스탬프 + 지정한 일 수  |
 ||||
 
-*실시예 1*
+*예제 1*
 
 이 예제는 지정한 타임스탬프에 10일을 더합니다.
 
@@ -342,7 +342,7 @@ addDays('2018-03-15T13:00:00Z', 10)
 
 그리고 다음 결과를 반환합니다. `"2018-03-25T00:00:0000000Z"`
 
-*실시예 2*
+*예제 2*
 
 이 예제는 지정한 타임스탬프에서 5일을 뺍니다.
 
@@ -364,9 +364,9 @@ addHours('<timestamp>', <hours>, '<format>'?)
 
 | 매개 변수 | 필수 | Type | Description |
 | --------- | -------- | ---- | ----------- |
-| <*타임 스탬프*> | yes | String | 타임스탬프를 포함하는 문자열 |
-| <*시간*> | yes | 정수 | 더할 양수 또는 음수 시간 수 |
-| <*형식*> | 예 | String | [단일 형식 지정자](https://docs.microsoft.com/dotnet/standard/base-types/standard-date-and-time-format-strings) 또는 [사용자 지정 형식 패턴](https://docs.microsoft.com/dotnet/standard/base-types/custom-date-and-time-format-strings)입니다. 타임스탬프의 기본 형식은 ["o"](https://docs.microsoft.com/dotnet/standard/base-types/standard-date-and-time-format-strings)(yyyy-MM-ddTHH:mm:ss:fffffffK)입니다. 이 형식은 [ISO 8601](https://en.wikipedia.org/wiki/ISO_8601)을 준수하며 표준 시간대 정보를 보존합니다. |
+| <*timestamp*> | yes | String | 타임스탬프를 포함하는 문자열 |
+| <*hours*> | yes | 정수 | 더할 양수 또는 음수 시간 수 |
+| <*format*> | 예 | String | [단일 형식 지정자](https://docs.microsoft.com/dotnet/standard/base-types/standard-date-and-time-format-strings) 또는 [사용자 지정 형식 패턴](https://docs.microsoft.com/dotnet/standard/base-types/custom-date-and-time-format-strings)입니다. 타임스탬프의 기본 형식은 ["o"](https://docs.microsoft.com/dotnet/standard/base-types/standard-date-and-time-format-strings)(yyyy-MM-ddTHH:mm:ss:fffffffK)입니다. 이 형식은 [ISO 8601](https://en.wikipedia.org/wiki/ISO_8601)을 준수하며 표준 시간대 정보를 보존합니다. |
 |||||
 
 | 반환 값 | Type | Description |
@@ -374,7 +374,7 @@ addHours('<timestamp>', <hours>, '<format>'?)
 | <*업데이트된 타임스탬프*> | String | 타임스탬프 + 지정한 시간 수  |
 ||||
 
-*실시예 1*
+*예제 1*
 
 이 예제는 지정한 타임스탬프에 10시간을 더합니다.
 
@@ -384,7 +384,7 @@ addHours('2018-03-15T00:00:00Z', 10)
 
 그리고 다음 결과를 반환합니다. `"2018-03-15T10:00:0000000Z"`
 
-*실시예 2*
+*예제 2*
 
 이 예제는 지정한 타임스탬프에서 5시간을 뺍니다.
 
@@ -406,9 +406,9 @@ addMinutes('<timestamp>', <minutes>, '<format>'?)
 
 | 매개 변수 | 필수 | Type | Description |
 | --------- | -------- | ---- | ----------- |
-| <*타임 스탬프*> | yes | String | 타임스탬프를 포함하는 문자열 |
-| <*분*> | yes | 정수 | 더할 양수 또는 음수 분 수 |
-| <*형식*> | 예 | String | [단일 형식 지정자](https://docs.microsoft.com/dotnet/standard/base-types/standard-date-and-time-format-strings) 또는 [사용자 지정 형식 패턴](https://docs.microsoft.com/dotnet/standard/base-types/custom-date-and-time-format-strings)입니다. 타임스탬프의 기본 형식은 ["o"](https://docs.microsoft.com/dotnet/standard/base-types/standard-date-and-time-format-strings)(yyyy-MM-ddTHH:mm:ss:fffffffK)입니다. 이 형식은 [ISO 8601](https://en.wikipedia.org/wiki/ISO_8601)을 준수하며 표준 시간대 정보를 보존합니다. |
+| <*timestamp*> | yes | String | 타임스탬프를 포함하는 문자열 |
+| <*minutes*> | yes | 정수 | 더할 양수 또는 음수 분 수 |
+| <*format*> | 예 | String | [단일 형식 지정자](https://docs.microsoft.com/dotnet/standard/base-types/standard-date-and-time-format-strings) 또는 [사용자 지정 형식 패턴](https://docs.microsoft.com/dotnet/standard/base-types/custom-date-and-time-format-strings)입니다. 타임스탬프의 기본 형식은 ["o"](https://docs.microsoft.com/dotnet/standard/base-types/standard-date-and-time-format-strings)(yyyy-MM-ddTHH:mm:ss:fffffffK)입니다. 이 형식은 [ISO 8601](https://en.wikipedia.org/wiki/ISO_8601)을 준수하며 표준 시간대 정보를 보존합니다. |
 |||||
 
 | 반환 값 | Type | Description |
@@ -416,7 +416,7 @@ addMinutes('<timestamp>', <minutes>, '<format>'?)
 | <*업데이트된 타임스탬프*> | String | 타임스탬프 + 지정한 분 수 |
 ||||
 
-*실시예 1*
+*예제 1*
 
 이 예제는 지정한 타임스탬프에 10분을 더합니다.
 
@@ -426,7 +426,7 @@ addMinutes('2018-03-15T00:10:00Z', 10)
 
 그리고 다음 결과를 반환합니다. `"2018-03-15T00:20:00.0000000Z"`
 
-*실시예 2*
+*예제 2*
 
 이 예제는 지정한 타임스탬프에서 5분을 뺍니다.
 
@@ -448,9 +448,9 @@ addSeconds('<timestamp>', <seconds>, '<format>'?)
 
 | 매개 변수 | 필수 | Type | Description |
 | --------- | -------- | ---- | ----------- |
-| <*타임 스탬프*> | yes | String | 타임스탬프를 포함하는 문자열 |
-| <*초*> | yes | 정수 | 더할 양수 또는 음수 초 수 |
-| <*형식*> | 예 | String | [단일 형식 지정자](https://docs.microsoft.com/dotnet/standard/base-types/standard-date-and-time-format-strings) 또는 [사용자 지정 형식 패턴](https://docs.microsoft.com/dotnet/standard/base-types/custom-date-and-time-format-strings)입니다. 타임스탬프의 기본 형식은 ["o"](https://docs.microsoft.com/dotnet/standard/base-types/standard-date-and-time-format-strings)(yyyy-MM-ddTHH:mm:ss:fffffffK)입니다. 이 형식은 [ISO 8601](https://en.wikipedia.org/wiki/ISO_8601)을 준수하며 표준 시간대 정보를 보존합니다. |
+| <*timestamp*> | yes | String | 타임스탬프를 포함하는 문자열 |
+| <*seconds*> | yes | 정수 | 더할 양수 또는 음수 초 수 |
+| <*format*> | 예 | String | [단일 형식 지정자](https://docs.microsoft.com/dotnet/standard/base-types/standard-date-and-time-format-strings) 또는 [사용자 지정 형식 패턴](https://docs.microsoft.com/dotnet/standard/base-types/custom-date-and-time-format-strings)입니다. 타임스탬프의 기본 형식은 ["o"](https://docs.microsoft.com/dotnet/standard/base-types/standard-date-and-time-format-strings)(yyyy-MM-ddTHH:mm:ss:fffffffK)입니다. 이 형식은 [ISO 8601](https://en.wikipedia.org/wiki/ISO_8601)을 준수하며 표준 시간대 정보를 보존합니다. |
 |||||
 
 | 반환 값 | Type | Description |
@@ -458,7 +458,7 @@ addSeconds('<timestamp>', <seconds>, '<format>'?)
 | <*업데이트된 타임스탬프*> | String | 타임스탬프 + 지정한 초 수  |
 ||||
 
-*실시예 1*
+*예제 1*
 
 이 예제는 지정한 타임스탬프에 10초를 더합니다.
 
@@ -468,7 +468,7 @@ addSeconds('2018-03-15T00:00:00Z', 10)
 
 그리고 다음 결과를 반환합니다. `"2018-03-15T00:00:10.0000000Z"`
 
-*실시예 2*
+*예제 2*
 
 이 예제는 지정한 타임스탬프에서 5초를 뺍니다.
 
@@ -491,10 +491,10 @@ addToTime('<timestamp>', <interval>, '<timeUnit>', '<format>'?)
 
 | 매개 변수 | 필수 | Type | Description |
 | --------- | -------- | ---- | ----------- |
-| <*타임 스탬프*> | yes | String | 타임스탬프를 포함하는 문자열 |
-| <*간격*> | yes | 정수 | 더할 지정한 시간 단위 수 |
-| <*시간 단위*> | yes | String | *interval*과 함께 사용할 시간 단위: "Second", "Minute", "Hour", "Day", "Week", "Month", "Year" |
-| <*형식*> | 예 | String | [단일 형식 지정자](https://docs.microsoft.com/dotnet/standard/base-types/standard-date-and-time-format-strings) 또는 [사용자 지정 형식 패턴](https://docs.microsoft.com/dotnet/standard/base-types/custom-date-and-time-format-strings)입니다. 타임스탬프의 기본 형식은 ["o"](https://docs.microsoft.com/dotnet/standard/base-types/standard-date-and-time-format-strings)(yyyy-MM-ddTHH:mm:ss:fffffffK)입니다. 이 형식은 [ISO 8601](https://en.wikipedia.org/wiki/ISO_8601)을 준수하며 표준 시간대 정보를 보존합니다. |
+| <*timestamp*> | yes | String | 타임스탬프를 포함하는 문자열 |
+| <*interval*> | yes | 정수 | 더할 지정한 시간 단위 수 |
+| <*timeUnit*> | yes | String | *interval*과 함께 사용할 시간 단위: "Second", "Minute", "Hour", "Day", "Week", "Month", "Year" |
+| <*format*> | 예 | String | [단일 형식 지정자](https://docs.microsoft.com/dotnet/standard/base-types/standard-date-and-time-format-strings) 또는 [사용자 지정 형식 패턴](https://docs.microsoft.com/dotnet/standard/base-types/custom-date-and-time-format-strings)입니다. 타임스탬프의 기본 형식은 ["o"](https://docs.microsoft.com/dotnet/standard/base-types/standard-date-and-time-format-strings)(yyyy-MM-ddTHH:mm:ss:fffffffK)입니다. 이 형식은 [ISO 8601](https://en.wikipedia.org/wiki/ISO_8601)을 준수하며 표준 시간대 정보를 보존합니다. |
 |||||
 
 | 반환 값 | Type | Description |
@@ -502,7 +502,7 @@ addToTime('<timestamp>', <interval>, '<timeUnit>', '<format>'?)
 | <*업데이트된 타임스탬프*> | String | 타임스탬프 + 지정한 시간 단위 수  |
 ||||
 
-*실시예 1*
+*예제 1*
 
 이 예제는 지정한 타임스탬프에 1일을 더합니다.
 
@@ -512,7 +512,7 @@ addToTime('2018-01-01T00:00:00Z', 1, 'Day')
 
 그리고 다음 결과를 반환합니다. `"2018-01-02T00:00:00.0000000Z"`
 
-*실시예 2*
+*예제 2*
 
 이 예제는 지정한 타임스탬프에 1일을 더합니다.
 
@@ -543,7 +543,7 @@ and(<expression1>, <expression2>, ...)
 | true 또는 false | 부울 | 모든 식이 true이면 true를 반환합니다. 식 중의 적어도 한 개가 false이면 false를 반환합니다. |
 ||||
 
-*실시예 1*
+*예제 1*
 
 아래 예제는 지정한 부울 값이 모두 true인지 검사합니다.
 
@@ -559,7 +559,7 @@ and(false, false)
 * 두 번째 예제: 식 한 개가 false이므로 `false`를 반환합니다.
 * 세 번째 예제: 두 식이 모두 false이므로 `false`를 반환합니다.
 
-*실시예 2*
+*예제 2*
 
 아래 예제는 지정한 식이 모두 true인지 검사합니다.
 
@@ -588,12 +588,12 @@ array('<value>')
 
 | 매개 변수 | 필수 | Type | Description |
 | --------- | -------- | ---- | ----------- |
-| <*값*> | yes | String | 배열을 만드는 문자열 |
+| <*value*> | yes | String | 배열을 만드는 문자열 |
 |||||
 
 | 반환 값 | Type | Description |
 | ------------ | ---- | ----------- |
-| 【<*값*>】 | Array | 단일 지정 입력을 포함하는 배열 |
+| 【<*value*>】 | Array | 단일 지정 입력을 포함하는 배열 |
 ||||
 
 *예제*
@@ -618,12 +618,12 @@ base64('<value>')
 
 | 매개 변수 | 필수 | Type | Description |
 | --------- | -------- | ---- | ----------- |
-| <*값*> | yes | String | 입력 문자열 |
+| <*value*> | yes | String | 입력 문자열 |
 |||||
 
 | 반환 값 | Type | Description |
 | ------------ | ---- | ----------- |
-| <*베이스64 스트링*> | String | 문자열에 대한 base64로 인코딩된 버전 |
+| <*base64 문자열*> | String | 문자열에 대한 base64로 인코딩된 버전 |
 ||||
 
 *예제*
@@ -648,7 +648,7 @@ base64ToBinary('<value>')
 
 | 매개 변수 | 필수 | Type | Description |
 | --------- | -------- | ---- | ----------- |
-| <*값*> | yes | String | 변환할 base64로 인코딩된 문자열 |
+| <*value*> | yes | String | 변환할 base64로 인코딩된 문자열 |
 |||||
 
 | 반환 값 | Type | Description |
@@ -682,7 +682,7 @@ base64ToString('<value>')
 
 | 매개 변수 | 필수 | Type | Description |
 | --------- | -------- | ---- | ----------- |
-| <*값*> | yes | String | 디코딩할 base64로 인코딩된 문자열 |
+| <*value*> | yes | String | 디코딩할 base64로 인코딩된 문자열 |
 |||||
 
 | 반환 값 | Type | Description |
@@ -712,7 +712,7 @@ binary('<value>')
 
 | 매개 변수 | 필수 | Type | Description |
 | --------- | -------- | ---- | ----------- |
-| <*값*> | yes | String | 변환할 문자열 |
+| <*value*> | yes | String | 변환할 문자열 |
 |||||
 
 | 반환 값 | Type | Description |
@@ -744,7 +744,7 @@ bool(<value>)
 
 | 매개 변수 | 필수 | Type | Description |
 | --------- | -------- | ---- | ----------- |
-| <*값*> | yes | 모두 | 변환할 값 |
+| <*value*> | yes | 모두 | 변환할 값 |
 |||||
 
 | 반환 값 | Type | Description |
@@ -855,7 +855,7 @@ contains([<collection>], '<value>')
 | 매개 변수 | 필수 | Type | Description |
 | --------- | -------- | ---- | ----------- |
 | <*컬렉션*> | yes | 문자열, 배열 또는 사전 | 검사할 컬렉션 |
-| <*값*> | yes | 각각 문자열, 배열 또는 사전 | 찾을 항목 |
+| <*value*> | yes | 각각 문자열, 배열 또는 사전 | 찾을 항목 |
 |||||
 
 | 반환 값 | Type | Description |
@@ -863,7 +863,7 @@ contains([<collection>], '<value>')
 | true 또는 false | 부울 | 항목이 발견되면 true를 반환합니다. 발견되지 않으면 false를 반환합니다. |
 ||||
 
-*실시예 1*
+*예제 1*
 
 이 예제는 부분 문자열 "world"에 대한 문자열 "hello world"를 검사하고 true를 반환합니다.
 
@@ -871,7 +871,7 @@ contains([<collection>], '<value>')
 contains('hello world', 'world')
 ```
 
-*실시예 2*
+*예제 2*
 
 이 예제는 부분 문자열 "universe"에 대한 문자열 "hello world"를 검사하고 false를 반환합니다.
 
@@ -891,9 +891,9 @@ convertFromUtc('<timestamp>', '<destinationTimeZone>', '<format>'?)
 
 | 매개 변수 | 필수 | Type | Description |
 | --------- | -------- | ---- | ----------- |
-| <*타임 스탬프*> | yes | String | 타임스탬프를 포함하는 문자열 |
+| <*timestamp*> | yes | String | 타임스탬프를 포함하는 문자열 |
 | <*대상시간대*> | yes | String | 대상 표준 시간대의 이름입니다. 표준 시간대 이름의 경우 [Microsoft 표준 시간대 인덱스 값을](https://support.microsoft.com/help/973627/microsoft-time-zone-index-values)참조하지만 표준 시간대 이름에서 문장 부호를 제거해야 할 수 있습니다. |
-| <*형식*> | 예 | String | [단일 형식 지정자](https://docs.microsoft.com/dotnet/standard/base-types/standard-date-and-time-format-strings) 또는 [사용자 지정 형식 패턴](https://docs.microsoft.com/dotnet/standard/base-types/custom-date-and-time-format-strings)입니다. 타임스탬프의 기본 형식은 ["o"](https://docs.microsoft.com/dotnet/standard/base-types/standard-date-and-time-format-strings)(yyyy-MM-ddTHH:mm:ss:fffffffK)입니다. 이 형식은 [ISO 8601](https://en.wikipedia.org/wiki/ISO_8601)을 준수하며 표준 시간대 정보를 보존합니다. |
+| <*format*> | 예 | String | [단일 형식 지정자](https://docs.microsoft.com/dotnet/standard/base-types/standard-date-and-time-format-strings) 또는 [사용자 지정 형식 패턴](https://docs.microsoft.com/dotnet/standard/base-types/custom-date-and-time-format-strings)입니다. 타임스탬프의 기본 형식은 ["o"](https://docs.microsoft.com/dotnet/standard/base-types/standard-date-and-time-format-strings)(yyyy-MM-ddTHH:mm:ss:fffffffK)입니다. 이 형식은 [ISO 8601](https://en.wikipedia.org/wiki/ISO_8601)을 준수하며 표준 시간대 정보를 보존합니다. |
 |||||
 
 | 반환 값 | Type | Description |
@@ -901,7 +901,7 @@ convertFromUtc('<timestamp>', '<destinationTimeZone>', '<format>'?)
 | <*변환된 타임스탬프*> | String | 대상 표준 시간대로 변환된 타임스탬프 |
 ||||
 
-*실시예 1*
+*예제 1*
 
 이 예제는 타임스탬프를 지정한 표준 시간대로 변환합니다.
 
@@ -911,7 +911,7 @@ convertFromUtc('2018-01-01T08:00:00.0000000Z', 'Pacific Standard Time')
 
 그리고 다음 결과를 반환합니다. `"2018-01-01T00:00:00.0000000"`
 
-*실시예 2*
+*예제 2*
 
 이 예제는 타임스탬프를 지정한 표준 시간대 및 형식으로 변환합니다.
 
@@ -933,10 +933,10 @@ convertTimeZone('<timestamp>', '<sourceTimeZone>', '<destinationTimeZone>', '<fo
 
 | 매개 변수 | 필수 | Type | Description |
 | --------- | -------- | ---- | ----------- |
-| <*타임 스탬프*> | yes | String | 타임스탬프를 포함하는 문자열 |
+| <*timestamp*> | yes | String | 타임스탬프를 포함하는 문자열 |
 | <*소스타임존*> | yes | String | 원본 표준 시간대의 이름입니다. 표준 시간대 이름의 경우 [Microsoft 표준 시간대 인덱스 값을](https://support.microsoft.com/help/973627/microsoft-time-zone-index-values)참조하지만 표준 시간대 이름에서 문장 부호를 제거해야 할 수 있습니다. |
 | <*대상시간대*> | yes | String | 대상 표준 시간대의 이름입니다. 표준 시간대 이름의 경우 [Microsoft 표준 시간대 인덱스 값을](https://support.microsoft.com/help/973627/microsoft-time-zone-index-values)참조하지만 표준 시간대 이름에서 문장 부호를 제거해야 할 수 있습니다. |
-| <*형식*> | 예 | String | [단일 형식 지정자](https://docs.microsoft.com/dotnet/standard/base-types/standard-date-and-time-format-strings) 또는 [사용자 지정 형식 패턴](https://docs.microsoft.com/dotnet/standard/base-types/custom-date-and-time-format-strings)입니다. 타임스탬프의 기본 형식은 ["o"](https://docs.microsoft.com/dotnet/standard/base-types/standard-date-and-time-format-strings)(yyyy-MM-ddTHH:mm:ss:fffffffK)입니다. 이 형식은 [ISO 8601](https://en.wikipedia.org/wiki/ISO_8601)을 준수하며 표준 시간대 정보를 보존합니다. |
+| <*format*> | 예 | String | [단일 형식 지정자](https://docs.microsoft.com/dotnet/standard/base-types/standard-date-and-time-format-strings) 또는 [사용자 지정 형식 패턴](https://docs.microsoft.com/dotnet/standard/base-types/custom-date-and-time-format-strings)입니다. 타임스탬프의 기본 형식은 ["o"](https://docs.microsoft.com/dotnet/standard/base-types/standard-date-and-time-format-strings)(yyyy-MM-ddTHH:mm:ss:fffffffK)입니다. 이 형식은 [ISO 8601](https://en.wikipedia.org/wiki/ISO_8601)을 준수하며 표준 시간대 정보를 보존합니다. |
 |||||
 
 | 반환 값 | Type | Description |
@@ -944,7 +944,7 @@ convertTimeZone('<timestamp>', '<sourceTimeZone>', '<destinationTimeZone>', '<fo
 | <*변환된 타임스탬프*> | String | 대상 표준 시간대로 변환된 타임스탬프 |
 ||||
 
-*실시예 1*
+*예제 1*
 
 이 예제는 원본 표준 시간대를 대상 표준 시간대로 변환합니다.
 
@@ -954,7 +954,7 @@ convertTimeZone('2018-01-01T08:00:00.0000000Z', 'UTC', 'Pacific Standard Time')
 
 그리고 다음 결과를 반환합니다. `"2018-01-01T00:00:00.0000000"`
 
-*실시예 2*
+*예제 2*
 
 이 예제는 표준 시간대를 지정한 표준 시간대 및 형식으로 변환합니다.
 
@@ -976,9 +976,9 @@ convertToUtc('<timestamp>', '<sourceTimeZone>', '<format>'?)
 
 | 매개 변수 | 필수 | Type | Description |
 | --------- | -------- | ---- | ----------- |
-| <*타임 스탬프*> | yes | String | 타임스탬프를 포함하는 문자열 |
+| <*timestamp*> | yes | String | 타임스탬프를 포함하는 문자열 |
 | <*소스타임존*> | yes | String | 원본 표준 시간대의 이름입니다. 표준 시간대 이름의 경우 [Microsoft 표준 시간대 인덱스 값을](https://support.microsoft.com/help/973627/microsoft-time-zone-index-values)참조하지만 표준 시간대 이름에서 문장 부호를 제거해야 할 수 있습니다. |
-| <*형식*> | 예 | String | [단일 형식 지정자](https://docs.microsoft.com/dotnet/standard/base-types/standard-date-and-time-format-strings) 또는 [사용자 지정 형식 패턴](https://docs.microsoft.com/dotnet/standard/base-types/custom-date-and-time-format-strings)입니다. 타임스탬프의 기본 형식은 ["o"](https://docs.microsoft.com/dotnet/standard/base-types/standard-date-and-time-format-strings)(yyyy-MM-ddTHH:mm:ss:fffffffK)입니다. 이 형식은 [ISO 8601](https://en.wikipedia.org/wiki/ISO_8601)을 준수하며 표준 시간대 정보를 보존합니다. |
+| <*format*> | 예 | String | [단일 형식 지정자](https://docs.microsoft.com/dotnet/standard/base-types/standard-date-and-time-format-strings) 또는 [사용자 지정 형식 패턴](https://docs.microsoft.com/dotnet/standard/base-types/custom-date-and-time-format-strings)입니다. 타임스탬프의 기본 형식은 ["o"](https://docs.microsoft.com/dotnet/standard/base-types/standard-date-and-time-format-strings)(yyyy-MM-ddTHH:mm:ss:fffffffK)입니다. 이 형식은 [ISO 8601](https://en.wikipedia.org/wiki/ISO_8601)을 준수하며 표준 시간대 정보를 보존합니다. |
 |||||
 
 | 반환 값 | Type | Description |
@@ -986,7 +986,7 @@ convertToUtc('<timestamp>', '<sourceTimeZone>', '<format>'?)
 | <*변환된 타임스탬프*> | String | UTC로 변환된 타임스탬프 |
 ||||
 
-*실시예 1*
+*예제 1*
 
 이 예제는 타임스탬프를 UTC로 변환합니다.
 
@@ -996,7 +996,7 @@ convertToUtc('01/01/2018 00:00:00', 'Pacific Standard Time')
 
 그리고 다음 결과를 반환합니다. `"2018-01-01T08:00:00.0000000Z"`
 
-*실시예 2*
+*예제 2*
 
 이 예제는 타임스탬프를 UTC로 변환합니다.
 
@@ -1049,12 +1049,12 @@ dataUri('<value>')
 
 | 매개 변수 | 필수 | Type | Description |
 | --------- | -------- | ---- | ----------- |
-| <*값*> | yes | String | 변환할 문자열 |
+| <*value*> | yes | String | 변환할 문자열 |
 |||||
 
 | 반환 값 | Type | Description |
 | ------------ | ---- | ----------- |
-| <*데이터 우리*> | String | 입력 문자열에 대한 데이터 URI |
+| <*data-uri*> | String | 입력 문자열에 대한 데이터 URI |
 ||||
 
 *예제*
@@ -1081,7 +1081,7 @@ dataUriToBinary('<value>')
 
 | 매개 변수 | 필수 | Type | Description |
 | --------- | -------- | ---- | ----------- |
-| <*값*> | yes | String | 변환할 데이터 URI |
+| <*value*> | yes | String | 변환할 데이터 URI |
 |||||
 
 | 반환 값 | Type | Description |
@@ -1116,12 +1116,12 @@ dataUriToString('<value>')
 
 | 매개 변수 | 필수 | Type | Description |
 | --------- | -------- | ---- | ----------- |
-| <*값*> | yes | String | 변환할 데이터 URI |
+| <*value*> | yes | String | 변환할 데이터 URI |
 |||||
 
 | 반환 값 | Type | Description |
 | ------------ | ---- | ----------- |
-| <*데이터 용 문자열 uri*> | String | 데이터 URI에 대한 문자열 버전 |
+| <*string-for-data-uri*> | String | 데이터 URI에 대한 문자열 버전 |
 ||||
 
 *예제*
@@ -1146,12 +1146,12 @@ dayOfMonth('<timestamp>')
 
 | 매개 변수 | 필수 | Type | Description |
 | --------- | -------- | ---- | ----------- |
-| <*타임 스탬프*> | yes | String | 타임스탬프를 포함하는 문자열 |
+| <*timestamp*> | yes | String | 타임스탬프를 포함하는 문자열 |
 |||||
 
 | 반환 값 | Type | Description |
 | ------------ | ---- | ----------- |
-| <*월일*> | 정수 | 지정한 타임스탬프의 월의 날짜 |
+| <*day-of-month*> | 정수 | 지정한 타임스탬프의 월의 날짜 |
 ||||
 
 *예제*
@@ -1176,7 +1176,7 @@ dayOfWeek('<timestamp>')
 
 | 매개 변수 | 필수 | Type | Description |
 | --------- | -------- | ---- | ----------- |
-| <*타임 스탬프*> | yes | String | 타임스탬프를 포함하는 문자열 |
+| <*timestamp*> | yes | String | 타임스탬프를 포함하는 문자열 |
 |||||
 
 | 반환 값 | Type | Description |
@@ -1206,7 +1206,7 @@ dayOfYear('<timestamp>')
 
 | 매개 변수 | 필수 | Type | Description |
 | --------- | -------- | ---- | ----------- |
-| <*타임 스탬프*> | yes | String | 타임스탬프를 포함하는 문자열 |
+| <*timestamp*> | yes | String | 타임스탬프를 포함하는 문자열 |
 |||||
 
 | 반환 값 | Type | Description |
@@ -1238,7 +1238,7 @@ decodeBase64('<value>')
 
 | 매개 변수 | 필수 | Type | Description |
 | --------- | -------- | ---- | ----------- |
-| <*값*> | yes | String | 디코딩할 base64로 인코딩된 문자열 |
+| <*value*> | yes | String | 디코딩할 base64로 인코딩된 문자열 |
 |||||
 
 | 반환 값 | Type | Description |
@@ -1270,7 +1270,7 @@ decodeDataUri('<value>')
 
 | 매개 변수 | 필수 | Type | Description |
 | --------- | -------- | ---- | ----------- |
-| <*값*> | yes | String | 디코딩할 데이터 URI 문자열 |
+| <*value*> | yes | String | 디코딩할 데이터 URI 문자열 |
 |||||
 
 | 반환 값 | Type | Description |
@@ -1305,7 +1305,7 @@ decodeUriComponent('<value>')
 
 | 매개 변수 | 필수 | Type | Description |
 | --------- | -------- | ---- | ----------- |
-| <*값*> | yes | String | 디코딩할 이스케이프 문자를 포함한 문자열 |
+| <*value*> | yes | String | 디코딩할 이스케이프 문자를 포함한 문자열 |
 |||||
 
 | 반환 값 | Type | Description |
@@ -1336,13 +1336,13 @@ div(<dividend>, <divisor>)
 
 | 매개 변수 | 필수 | Type | Description |
 | --------- | -------- | ---- | ----------- |
-| <*배당*> | yes | 정수 또는 부동 소수점 수 | *제수*로 나눌 숫자 |
-| <*제*> | yes | 정수 또는 부동 소수점 수 | *배당금을*나누지만 0이 될 수 없는 숫자 |
+| <*dividend*> | yes | 정수 또는 부동 소수점 수 | *제수*로 나눌 숫자 |
+| <*divisor*> | yes | 정수 또는 부동 소수점 수 | *배당금을*나누지만 0이 될 수 없는 숫자 |
 |||||
 
 | 반환 값 | Type | Description |
 | ------------ | ---- | ----------- |
-| <*몫 결과*> | 정수 | 첫 번째 숫자를 두 번째 숫자로 나눈 정수 결과 |
+| <*몫*> | 정수 | 첫 번째 숫자를 두 번째 숫자로 나눈 정수 결과 |
 ||||
 
 *예제*
@@ -1370,7 +1370,7 @@ encodeUriComponent('<value>')
 
 | 매개 변수 | 필수 | Type | Description |
 | --------- | -------- | ---- | ----------- |
-| <*값*> | yes | String | URI 인코딩된 형식으로 변환할 문자열 |
+| <*value*> | yes | String | URI 인코딩된 형식으로 변환할 문자열 |
 |||||
 
 | 반환 값 | Type | Description |
@@ -1438,8 +1438,8 @@ endsWith('<text>', '<searchText>')
 
 | 매개 변수 | 필수 | Type | Description |
 | --------- | -------- | ---- | ----------- |
-| <*텍스트*> | yes | String | 검사할 문자열 |
-| <*검색텍스트*> | yes | String | 찾을 끝나는 하위 문자열 |
+| <*text*> | yes | String | 검사할 문자열 |
+| <*검색 문자열*> | yes | String | 찾을 끝나는 하위 문자열 |
 |||||
 
 | 반환 값 | Type | Description |
@@ -1447,7 +1447,7 @@ endsWith('<text>', '<searchText>')
 | true 또는 false  | 부울 | 끝나는 하위 문자열이 발견되면 true를 반환합니다. 발견되지 않으면 false를 반환합니다. |
 ||||
 
-*실시예 1*
+*예제 1*
 
 이 예제는 "hellow world" 문자열이 "world" 문자열로 끝나는지 검사합니다.
 
@@ -1457,7 +1457,7 @@ endsWith('hello world', 'world')
 
 그리고 다음 결과를 반환합니다. `true`
 
-*실시예 2*
+*예제 2*
 
 이 예제는 "hellow world" 문자열이 "universe" 문자열로 끝나는지 검사합니다.
 
@@ -1549,12 +1549,12 @@ float('<value>')
 
 | 매개 변수 | 필수 | Type | Description |
 | --------- | -------- | ---- | ----------- |
-| <*값*> | yes | String | 변환할 유효한 부동 소수점 수를 가진 문자열 |
+| <*value*> | yes | String | 변환할 유효한 부동 소수점 수를 가진 문자열 |
 |||||
 
 | 반환 값 | Type | Description |
 | ------------ | ---- | ----------- |
-| <*플로트 값*> | Float | 지정한 문자열에 대한 부동 소수점 수 |
+| <*float-value*> | Float | 지정한 문자열에 대한 부동 소수점 수 |
 ||||
 
 *예제*
@@ -1579,13 +1579,13 @@ formatDateTime('<timestamp>', '<format>'?)
 
 | 매개 변수 | 필수 | Type | Description |
 | --------- | -------- | ---- | ----------- |
-| <*타임 스탬프*> | yes | String | 타임스탬프를 포함하는 문자열 |
-| <*형식*> | 예 | String | [단일 형식 지정자](https://docs.microsoft.com/dotnet/standard/base-types/standard-date-and-time-format-strings) 또는 [사용자 지정 형식 패턴](https://docs.microsoft.com/dotnet/standard/base-types/custom-date-and-time-format-strings)입니다. 타임스탬프의 기본 형식은 ["o"](https://docs.microsoft.com/dotnet/standard/base-types/standard-date-and-time-format-strings)(yyyy-MM-ddTHH:mm:ss:fffffffK)입니다. 이 형식은 [ISO 8601](https://en.wikipedia.org/wiki/ISO_8601)을 준수하며 표준 시간대 정보를 보존합니다. |
+| <*timestamp*> | yes | String | 타임스탬프를 포함하는 문자열 |
+| <*format*> | 예 | String | [단일 형식 지정자](https://docs.microsoft.com/dotnet/standard/base-types/standard-date-and-time-format-strings) 또는 [사용자 지정 형식 패턴](https://docs.microsoft.com/dotnet/standard/base-types/custom-date-and-time-format-strings)입니다. 타임스탬프의 기본 형식은 ["o"](https://docs.microsoft.com/dotnet/standard/base-types/standard-date-and-time-format-strings)(yyyy-MM-ddTHH:mm:ss:fffffffK)입니다. 이 형식은 [ISO 8601](https://en.wikipedia.org/wiki/ISO_8601)을 준수하며 표준 시간대 정보를 보존합니다. |
 |||||
 
 | 반환 값 | Type | Description |
 | ------------ | ---- | ----------- |
-| <*다시 포설된 타임스탬프*> | String | 지정한 형식으로 업데이트된 타임스탬프 |
+| <*reformatted-timestamp*> | String | 지정한 형식으로 업데이트된 타임스탬프 |
 ||||
 
 *예제*
@@ -1610,9 +1610,9 @@ getFutureTime(<interval>, <timeUnit>, <format>?)
 
 | 매개 변수 | 필수 | Type | Description |
 | --------- | -------- | ---- | ----------- |
-| <*간격*> | yes | 정수 | 더할 지정한 시간 단위 수 |
-| <*시간 단위*> | yes | String | *interval*과 함께 사용할 시간 단위: "Second", "Minute", "Hour", "Day", "Week", "Month", "Year" |
-| <*형식*> | 예 | String | [단일 형식 지정자](https://docs.microsoft.com/dotnet/standard/base-types/standard-date-and-time-format-strings) 또는 [사용자 지정 형식 패턴](https://docs.microsoft.com/dotnet/standard/base-types/custom-date-and-time-format-strings)입니다. 타임스탬프의 기본 형식은 ["o"](https://docs.microsoft.com/dotnet/standard/base-types/standard-date-and-time-format-strings)(yyyy-MM-ddTHH:mm:ss:fffffffK)입니다. 이 형식은 [ISO 8601](https://en.wikipedia.org/wiki/ISO_8601)을 준수하며 표준 시간대 정보를 보존합니다. |
+| <*interval*> | yes | 정수 | 더할 지정한 시간 단위 수 |
+| <*timeUnit*> | yes | String | *interval*과 함께 사용할 시간 단위: "Second", "Minute", "Hour", "Day", "Week", "Month", "Year" |
+| <*format*> | 예 | String | [단일 형식 지정자](https://docs.microsoft.com/dotnet/standard/base-types/standard-date-and-time-format-strings) 또는 [사용자 지정 형식 패턴](https://docs.microsoft.com/dotnet/standard/base-types/custom-date-and-time-format-strings)입니다. 타임스탬프의 기본 형식은 ["o"](https://docs.microsoft.com/dotnet/standard/base-types/standard-date-and-time-format-strings)(yyyy-MM-ddTHH:mm:ss:fffffffK)입니다. 이 형식은 [ISO 8601](https://en.wikipedia.org/wiki/ISO_8601)을 준수하며 표준 시간대 정보를 보존합니다. |
 |||||
 
 | 반환 값 | Type | Description |
@@ -1620,7 +1620,7 @@ getFutureTime(<interval>, <timeUnit>, <format>?)
 | <*업데이트된 타임스탬프*> | String | 현재 타임스탬프 + 지정한 시간 단위 수 |
 ||||
 
-*실시예 1*
+*예제 1*
 
 현재 타임스탬프가 "2018-03-01T00:00:00.0000000Z"라고 가정합니다.
 이 예제는 해당 타임스탬프에 5일을 더합니다.
@@ -1631,7 +1631,7 @@ getFutureTime(5, 'Day')
 
 그리고 다음 결과를 반환합니다. `"2018-03-06T00:00:00.0000000Z"`
 
-*실시예 2*
+*예제 2*
 
 현재 타임스탬프가 "2018-03-01T00:00:00.0000000Z"라고 가정합니다.
 이 예제는 5일을 더하고 결과를 "D" 형식으로 변환합니다.
@@ -1654,9 +1654,9 @@ getPastTime(<interval>, <timeUnit>, <format>?)
 
 | 매개 변수 | 필수 | Type | Description |
 | --------- | -------- | ---- | ----------- |
-| <*간격*> | yes | 정수 | 뺄 지정한 시간 단위 수 |
-| <*시간 단위*> | yes | String | *interval*과 함께 사용할 시간 단위: "Second", "Minute", "Hour", "Day", "Week", "Month", "Year" |
-| <*형식*> | 예 | String | [단일 형식 지정자](https://docs.microsoft.com/dotnet/standard/base-types/standard-date-and-time-format-strings) 또는 [사용자 지정 형식 패턴](https://docs.microsoft.com/dotnet/standard/base-types/custom-date-and-time-format-strings)입니다. 타임스탬프의 기본 형식은 ["o"](https://docs.microsoft.com/dotnet/standard/base-types/standard-date-and-time-format-strings)(yyyy-MM-ddTHH:mm:ss:fffffffK)입니다. 이 형식은 [ISO 8601](https://en.wikipedia.org/wiki/ISO_8601)을 준수하며 표준 시간대 정보를 보존합니다. |
+| <*interval*> | yes | 정수 | 뺄 지정한 시간 단위 수 |
+| <*timeUnit*> | yes | String | *interval*과 함께 사용할 시간 단위: "Second", "Minute", "Hour", "Day", "Week", "Month", "Year" |
+| <*format*> | 예 | String | [단일 형식 지정자](https://docs.microsoft.com/dotnet/standard/base-types/standard-date-and-time-format-strings) 또는 [사용자 지정 형식 패턴](https://docs.microsoft.com/dotnet/standard/base-types/custom-date-and-time-format-strings)입니다. 타임스탬프의 기본 형식은 ["o"](https://docs.microsoft.com/dotnet/standard/base-types/standard-date-and-time-format-strings)(yyyy-MM-ddTHH:mm:ss:fffffffK)입니다. 이 형식은 [ISO 8601](https://en.wikipedia.org/wiki/ISO_8601)을 준수하며 표준 시간대 정보를 보존합니다. |
 |||||
 
 | 반환 값 | Type | Description |
@@ -1664,7 +1664,7 @@ getPastTime(<interval>, <timeUnit>, <format>?)
 | <*업데이트된 타임스탬프*> | String | 현재 타임스탬프 - 지정한 시간 단위 수 |
 ||||
 
-*실시예 1*
+*예제 1*
 
 현재 타임스탬프가 "2018-02-01T00:00:00.0000000Z"라고 가정합니다.
 이 예제는 해당 타임스탬프에서 5일을 뺍니다.
@@ -1675,7 +1675,7 @@ getPastTime(5, 'Day')
 
 그리고 다음 결과를 반환합니다. `"2018-01-27T00:00:00.0000000Z"`
 
-*실시예 2*
+*예제 2*
 
 현재 타임스탬프가 "2018-02-01T00:00:00.0000000Z"라고 가정합니다.
 이 예제는 5일을 빼고 결과를 "D" 형식으로 변환합니다.
@@ -1700,7 +1700,7 @@ greater('<value>', '<compareTo>')
 
 | 매개 변수 | 필수 | Type | Description |
 | --------- | -------- | ---- | ----------- |
-| <*값*> | yes | 정수, 부동 소수점 수 또는 문자열 | 두 번째 값보다 큰지 검사할 첫 번째 값 |
+| <*value*> | yes | 정수, 부동 소수점 수 또는 문자열 | 두 번째 값보다 큰지 검사할 첫 번째 값 |
 | <*Compareto*> | yes | 각각 정수, 부동 소수점 수 또는 문자열 | 비교 값 |
 |||||
 
@@ -1737,7 +1737,7 @@ greaterOrEquals('<value>', '<compareTo>')
 
 | 매개 변수 | 필수 | Type | Description |
 | --------- | -------- | ---- | ----------- |
-| <*값*> | yes | 정수, 부동 소수점 수 또는 문자열 | 두 번째 값보다 크거나 같은지 검사할 첫 번째 값 |
+| <*value*> | yes | 정수, 부동 소수점 수 또는 문자열 | 두 번째 값보다 크거나 같은지 검사할 첫 번째 값 |
 | <*Compareto*> | yes | 각각 정수, 부동 소수점 수 또는 문자열 | 비교 값 |
 |||||
 
@@ -1778,7 +1778,7 @@ guid('<format>')
 
 | 매개 변수 | 필수 | Type | Description |
 | --------- | -------- | ---- | ----------- |
-| <*형식*> | 예 | String | 반환되는 GUID에 대한 단일 [형식 지정자](https://msdn.microsoft.com/library/97af8hh4)입니다. 기본적으로 형식은 "D"이지만 "N", "D", "B", "P" 또는 "X"를 사용할 수 있습니다. |
+| <*format*> | 예 | String | 반환되는 GUID에 대한 단일 [형식 지정자](https://msdn.microsoft.com/library/97af8hh4)입니다. 기본적으로 형식은 "D"이지만 "N", "D", "B", "P" 또는 "X"를 사용할 수 있습니다. |
 |||||
 
 | 반환 값 | Type | Description |
@@ -1809,9 +1809,9 @@ if(<expression>, <valueIfTrue>, <valueIfFalse>)
 
 | 매개 변수 | 필수 | Type | Description |
 | --------- | -------- | ---- | ----------- |
-| <*식*> | yes | 부울 | 검사할 식 |
-| <*값IfTrue*> | yes | 모두 | 식이 true이면 반환할 값 |
-| <*값IfFalse*> | yes | 모두 | 식이 false이면 반환할 값 |
+| <*expression*> | yes | 부울 | 검사할 식 |
+| <*valueIfTrue*> | yes | 모두 | 식이 true이면 반환할 값 |
+| <*valueIfFalse*> | yes | 모두 | 식이 false이면 반환할 값 |
 |||||
 
 | 반환 값 | Type | Description |
@@ -1841,8 +1841,8 @@ indexOf('<text>', '<searchText>')
 
 | 매개 변수 | 필수 | Type | Description |
 | --------- | -------- | ---- | ----------- |
-| <*텍스트*> | yes | String | 찾을 하위 문자열을 가진 문자열 |
-| <*검색텍스트*> | yes | String | 찾을 하위 문자열 |
+| <*text*> | yes | String | 찾을 하위 문자열을 가진 문자열 |
+| <*검색 문자열*> | yes | String | 찾을 하위 문자열 |
 |||||
 
 | 반환 값 | Type | Description |
@@ -1872,7 +1872,7 @@ int('<value>')
 
 | 매개 변수 | 필수 | Type | Description |
 | --------- | -------- | ---- | ----------- |
-| <*값*> | yes | String | 변환할 문자열 |
+| <*value*> | yes | String | 변환할 문자열 |
 |||||
 
 | 반환 값 | Type | Description |
@@ -1902,7 +1902,7 @@ json('<value>')
 
 | 매개 변수 | 필수 | Type | Description |
 | --------- | -------- | ---- | ----------- |
-| <*값*> | yes | 문자열 또는 XML | 변환할 문자열 또는 XML |
+| <*value*> | yes | 문자열 또는 XML | 변환할 문자열 또는 XML |
 |||||
 
 | 반환 값 | Type | Description |
@@ -1910,7 +1910,7 @@ json('<value>')
 | <*JSON 결과*> | JSON 원시 형식 또는 개체 | JSON 고유 형식 값 또는 지정한 문자열이나 XML에 대한 개체입니다. 문자열이 Null이면, 함수는 빈 개체를 반환합니다. |
 ||||
 
-*실시예 1*
+*예제 1*
 
 이 예제는 이 문자열을 JSON 값으로 변환합니다.
 
@@ -1920,7 +1920,7 @@ json('[1, 2, 3]')
 
 그리고 다음 결과를 반환합니다. `[1, 2, 3]`
 
-*실시예 2*
+*예제 2*
 
 이 예제는 이 문자열을 JSON으로 변환합니다.
 
@@ -1936,7 +1936,7 @@ json('{"fullName": "Sophia Owen"}')
 }
 ```
 
-*실시예 3*
+*예제 3*
 
 이 예제는 이 XML을 JSON으로 변환합니다.
 
@@ -2071,13 +2071,13 @@ lastIndexOf('<text>', '<searchText>')
 
 | 매개 변수 | 필수 | Type | Description |
 | --------- | -------- | ---- | ----------- |
-| <*텍스트*> | yes | String | 찾을 하위 문자열을 가진 문자열 |
-| <*검색텍스트*> | yes | String | 찾을 하위 문자열 |
+| <*text*> | yes | String | 찾을 하위 문자열을 가진 문자열 |
+| <*검색 문자열*> | yes | String | 찾을 하위 문자열 |
 |||||
 
 | 반환 값 | Type | Description |
 | ------------ | ---- | ----------- |
-| <*엔딩 인덱스 값*> | 정수 | 마지막으로 나오는 지정된 부분 문자열의 시작 위치 또는 인덱스 값입니다. <p>문자열을 찾을 수 없는 경우 -1을 반환합니다. |
+| <*마지막 인덱스 값*> | 정수 | 마지막으로 나오는 지정된 부분 문자열의 시작 위치 또는 인덱스 값입니다. <p>문자열을 찾을 수 없는 경우 -1을 반환합니다. |
 ||||
 
 *예제*
@@ -2136,7 +2136,7 @@ less('<value>', '<compareTo>')
 
 | 매개 변수 | 필수 | Type | Description |
 | --------- | -------- | ---- | ----------- |
-| <*값*> | yes | 정수, 부동 소수점 수 또는 문자열 | 두 번째 값보다 작은지 검사할 첫 번째 값 |
+| <*value*> | yes | 정수, 부동 소수점 수 또는 문자열 | 두 번째 값보다 작은지 검사할 첫 번째 값 |
 | <*Compareto*> | yes | 각각 정수, 부동 소수점 수 또는 문자열 | 비교 항목 |
 |||||
 
@@ -2173,7 +2173,7 @@ lessOrEquals('<value>', '<compareTo>')
 
 | 매개 변수 | 필수 | Type | Description |
 | --------- | -------- | ---- | ----------- |
-| <*값*> | yes | 정수, 부동 소수점 수 또는 문자열 | 두 번째 값보다 작거나 같은지 검사할 첫 번째 값 |
+| <*value*> | yes | 정수, 부동 소수점 수 또는 문자열 | 두 번째 값보다 작거나 같은지 검사할 첫 번째 값 |
 | <*Compareto*> | yes | 각각 정수, 부동 소수점 수 또는 문자열 | 비교 항목 |
 |||||
 
@@ -2210,12 +2210,12 @@ max([<number1>, <number2>, ...])
 | 매개 변수 | 필수 | Type | Description |
 | --------- | -------- | ---- | ----------- |
 | <*number1*>, <*number2*>, ... | yes | 정수, 부동 소수점 수 또는 둘 다 | 가장 높은 값을 원하는 숫자의 집합 |
-| 【<*넘버1*>, <*넘버2*>...】 | yes | 배열 - 정수, 부동 소수점 수 또는 둘 다 | 가장 높은 값을 원하는 숫자의 배열 |
+| 【<*number1*>, <*number2*>...】 | yes | 배열 - 정수, 부동 소수점 수 또는 둘 다 | 가장 높은 값을 원하는 숫자의 배열 |
 |||||
 
 | 반환 값 | Type | Description |
 | ------------ | ---- | ----------- |
-| <*최대 값*> | 정수 또는 부동 소수점 수 | 지정한 배열 또는 숫자 집합의 가장 높은 값 |
+| <*최댓값*> | 정수 또는 부동 소수점 수 | 지정한 배열 또는 숫자 집합의 가장 높은 값 |
 ||||
 
 *예제*
@@ -2243,12 +2243,12 @@ min([<number1>, <number2>, ...])
 | 매개 변수 | 필수 | Type | Description |
 | --------- | -------- | ---- | ----------- |
 | <*number1*>, <*number2*>, ... | yes | 정수, 부동 소수점 수 또는 둘 다 | 가장 낮은 값을 원하는 숫자의 집합 |
-| 【<*넘버1*>, <*넘버2*>...】 | yes | 배열 - 정수, 부동 소수점 수 또는 둘 다 | 가장 낮은 값을 원하는 숫자의 배열 |
+| 【<*number1*>, <*number2*>...】 | yes | 배열 - 정수, 부동 소수점 수 또는 둘 다 | 가장 낮은 값을 원하는 숫자의 배열 |
 |||||
 
 | 반환 값 | Type | Description |
 | ------------ | ---- | ----------- |
-| <*최소 값*> | 정수 또는 부동 소수점 수 | 지정한 숫자 집합 또는 지정한 배열의 가장 낮은 값 |
+| <*최솟값*> | 정수 또는 부동 소수점 수 | 지정한 숫자 집합 또는 지정한 배열의 가장 낮은 값 |
 ||||
 
 *예제*
@@ -2275,13 +2275,13 @@ mod(<dividend>, <divisor>)
 
 | 매개 변수 | 필수 | Type | Description |
 | --------- | -------- | ---- | ----------- |
-| <*배당*> | yes | 정수 또는 부동 소수점 수 | *제수*로 나눌 숫자 |
-| <*제*> | yes | 정수 또는 부동 소수점 수 | *피제수*를 분할하는 숫자, 그러나 0이 올 수 없습니다. |
+| <*dividend*> | yes | 정수 또는 부동 소수점 수 | *제수*로 나눌 숫자 |
+| <*divisor*> | yes | 정수 또는 부동 소수점 수 | *피제수*를 분할하는 숫자, 그러나 0이 올 수 없습니다. |
 |||||
 
 | 반환 값 | Type | Description |
 | ------------ | ---- | ----------- |
-| <*조절 결과*> | 정수 또는 부동 소수점 수 | 첫 번째 숫자를 두 번째 숫자로 나눈 나머지 |
+| <*나머지*> | 정수 또는 부동 소수점 수 | 첫 번째 숫자를 두 번째 숫자로 나눈 나머지 |
 ||||
 
 *예제*
@@ -2306,13 +2306,13 @@ mul(<multiplicand1>, <multiplicand2>)
 
 | 매개 변수 | 필수 | Type | Description |
 | --------- | -------- | ---- | ----------- |
-| <*곱하기 1*> | yes | 정수 또는 부동 소수점 수 | *multiplicand2*로 곱할 숫자 |
-| <*곱하기2*> | yes | 정수 또는 부동 소수점 수 | *multiplicand1*를 곱하는 숫자 |
+| <*multiplicand1*> | yes | 정수 또는 부동 소수점 수 | *multiplicand2*로 곱할 숫자 |
+| <*multiplicand2*> | yes | 정수 또는 부동 소수점 수 | *multiplicand1*를 곱하는 숫자 |
 |||||
 
 | 반환 값 | Type | Description |
 | ------------ | ---- | ----------- |
-| <*제품 결과*> | 정수 또는 부동 소수점 수 | 첫 번째 숫자를 두 번째 숫자로 곱한 결과 |
+| <*곱셈 결과*> | 정수 또는 부동 소수점 수 | 첫 번째 숫자를 두 번째 숫자로 곱한 결과 |
 ||||
 
 *예제*
@@ -2342,7 +2342,7 @@ not(<expression>)
 
 | 매개 변수 | 필수 | Type | Description |
 | --------- | -------- | ---- | ----------- |
-| <*식*> | yes | 부울 | 검사할 식 |
+| <*expression*> | yes | 부울 | 검사할 식 |
 |||||
 
 | 반환 값 | Type | Description |
@@ -2350,7 +2350,7 @@ not(<expression>)
 | true 또는 false | 부울 | 식이 false이면 true를 반환합니다. 식이 true이면 false를 반환합니다. |
 ||||
 
-*실시예 1*
+*예제 1*
 
 아래 예제는 지정한 식이 모두 false인지 검사합니다.
 
@@ -2364,7 +2364,7 @@ not(true)
 * 첫 번째 예제: 식이 false이므로 함수는 `true`를 반환합니다.
 * 두 번째 예제: 식이 true이므로 함수는 `false`를 반환합니다.
 
-*실시예 2*
+*예제 2*
 
 아래 예제는 지정한 식이 모두 false인지 검사합니다.
 
@@ -2399,7 +2399,7 @@ or(<expression1>, <expression2>, ...)
 | true 또는 false | 부울 | 최소 하나의 식이 true이면 true를 반환합니다. 모든 식이 false이면 false를 반환합니다. |
 ||||
 
-*실시예 1*
+*예제 1*
 
 아래 예제는 최소 하나의 식이 true인지 검사합니다.
 
@@ -2413,7 +2413,7 @@ or(false, false)
 * 첫 번째 예제: 최소 하나의 식이 true이므로 함수는 `true`를 반환합니다.
 * 두 번째 예제: 두 식이 모두 false이므로 함수는 `false`를 반환합니다.
 
-*실시예 2*
+*예제 2*
 
 아래 예제는 최소 하나의 식이 true인지 검사합니다.
 
@@ -2501,9 +2501,9 @@ replace('<text>', '<oldText>', '<newText>')
 
 | 매개 변수 | 필수 | Type | Description |
 | --------- | -------- | ---- | ----------- |
-| <*텍스트*> | yes | String | 바꿀 하위 문자열을 가진 문자열 |
-| <*이전 텍스트*> | yes | String | 바꿀 하위 문자열 |
-| <*뉴 텍스트*> | yes | String | 대체 문자열 |
+| <*text*> | yes | String | 바꿀 하위 문자열을 가진 문자열 |
+| <*oldText*> | yes | String | 바꿀 하위 문자열 |
+| <*newText*> | yes | String | 대체 문자열 |
 |||||
 
 | 반환 값 | Type | Description |
@@ -2564,7 +2564,7 @@ split('<text>', '<delimiter>')
 
 | 매개 변수 | 필수 | Type | Description |
 | --------- | -------- | ---- | ----------- |
-| <*텍스트*> | yes | String | 원래 문자열에 지정된 구분 기호를 기준으로 하여 하위 문자열로 구분할 문자열입니다. |
+| <*text*> | yes | String | 원래 문자열에 지정된 구분 기호를 기준으로 하여 하위 문자열로 구분할 문자열입니다. |
 | <*구분 기호*> | yes | String | 구분 기호로 사용할 원래 문자열의 문자입니다. |
 |||||
 
@@ -2595,8 +2595,8 @@ startOfDay('<timestamp>', '<format>'?)
 
 | 매개 변수 | 필수 | Type | Description |
 | --------- | -------- | ---- | ----------- |
-| <*타임 스탬프*> | yes | String | 타임스탬프를 포함하는 문자열 |
-| <*형식*> | 예 | String | [단일 형식 지정자](https://docs.microsoft.com/dotnet/standard/base-types/standard-date-and-time-format-strings) 또는 [사용자 지정 형식 패턴](https://docs.microsoft.com/dotnet/standard/base-types/custom-date-and-time-format-strings)입니다. 타임스탬프의 기본 형식은 ["o"](https://docs.microsoft.com/dotnet/standard/base-types/standard-date-and-time-format-strings)(yyyy-MM-ddTHH:mm:ss:fffffffK)입니다. 이 형식은 [ISO 8601](https://en.wikipedia.org/wiki/ISO_8601)을 준수하며 표준 시간대 정보를 보존합니다. |
+| <*timestamp*> | yes | String | 타임스탬프를 포함하는 문자열 |
+| <*format*> | 예 | String | [단일 형식 지정자](https://docs.microsoft.com/dotnet/standard/base-types/standard-date-and-time-format-strings) 또는 [사용자 지정 형식 패턴](https://docs.microsoft.com/dotnet/standard/base-types/custom-date-and-time-format-strings)입니다. 타임스탬프의 기본 형식은 ["o"](https://docs.microsoft.com/dotnet/standard/base-types/standard-date-and-time-format-strings)(yyyy-MM-ddTHH:mm:ss:fffffffK)입니다. 이 형식은 [ISO 8601](https://en.wikipedia.org/wiki/ISO_8601)을 준수하며 표준 시간대 정보를 보존합니다. |
 |||||
 
 | 반환 값 | Type | Description |
@@ -2626,8 +2626,8 @@ startOfHour('<timestamp>', '<format>'?)
 
 | 매개 변수 | 필수 | Type | Description |
 | --------- | -------- | ---- | ----------- |
-| <*타임 스탬프*> | yes | String | 타임스탬프를 포함하는 문자열 |
-| <*형식*> | 예 | String | [단일 형식 지정자](https://docs.microsoft.com/dotnet/standard/base-types/standard-date-and-time-format-strings) 또는 [사용자 지정 형식 패턴](https://docs.microsoft.com/dotnet/standard/base-types/custom-date-and-time-format-strings)입니다. 타임스탬프의 기본 형식은 ["o"](https://docs.microsoft.com/dotnet/standard/base-types/standard-date-and-time-format-strings)(yyyy-MM-ddTHH:mm:ss:fffffffK)입니다. 이 형식은 [ISO 8601](https://en.wikipedia.org/wiki/ISO_8601)을 준수하며 표준 시간대 정보를 보존합니다. |
+| <*timestamp*> | yes | String | 타임스탬프를 포함하는 문자열 |
+| <*format*> | 예 | String | [단일 형식 지정자](https://docs.microsoft.com/dotnet/standard/base-types/standard-date-and-time-format-strings) 또는 [사용자 지정 형식 패턴](https://docs.microsoft.com/dotnet/standard/base-types/custom-date-and-time-format-strings)입니다. 타임스탬프의 기본 형식은 ["o"](https://docs.microsoft.com/dotnet/standard/base-types/standard-date-and-time-format-strings)(yyyy-MM-ddTHH:mm:ss:fffffffK)입니다. 이 형식은 [ISO 8601](https://en.wikipedia.org/wiki/ISO_8601)을 준수하며 표준 시간대 정보를 보존합니다. |
 |||||
 
 | 반환 값 | Type | Description |
@@ -2657,8 +2657,8 @@ startOfMonth('<timestamp>', '<format>'?)
 
 | 매개 변수 | 필수 | Type | Description |
 | --------- | -------- | ---- | ----------- |
-| <*타임 스탬프*> | yes | String | 타임스탬프를 포함하는 문자열 |
-| <*형식*> | 예 | String | [단일 형식 지정자](https://docs.microsoft.com/dotnet/standard/base-types/standard-date-and-time-format-strings) 또는 [사용자 지정 형식 패턴](https://docs.microsoft.com/dotnet/standard/base-types/custom-date-and-time-format-strings)입니다. 타임스탬프의 기본 형식은 ["o"](https://docs.microsoft.com/dotnet/standard/base-types/standard-date-and-time-format-strings)(yyyy-MM-ddTHH:mm:ss:fffffffK)입니다. 이 형식은 [ISO 8601](https://en.wikipedia.org/wiki/ISO_8601)을 준수하며 표준 시간대 정보를 보존합니다. |
+| <*timestamp*> | yes | String | 타임스탬프를 포함하는 문자열 |
+| <*format*> | 예 | String | [단일 형식 지정자](https://docs.microsoft.com/dotnet/standard/base-types/standard-date-and-time-format-strings) 또는 [사용자 지정 형식 패턴](https://docs.microsoft.com/dotnet/standard/base-types/custom-date-and-time-format-strings)입니다. 타임스탬프의 기본 형식은 ["o"](https://docs.microsoft.com/dotnet/standard/base-types/standard-date-and-time-format-strings)(yyyy-MM-ddTHH:mm:ss:fffffffK)입니다. 이 형식은 [ISO 8601](https://en.wikipedia.org/wiki/ISO_8601)을 준수하며 표준 시간대 정보를 보존합니다. |
 |||||
 
 | 반환 값 | Type | Description |
@@ -2690,8 +2690,8 @@ startsWith('<text>', '<searchText>')
 
 | 매개 변수 | 필수 | Type | Description |
 | --------- | -------- | ---- | ----------- |
-| <*텍스트*> | yes | String | 검사할 문자열 |
-| <*검색텍스트*> | yes | String | 찾을 시작 문자열 |
+| <*text*> | yes | String | 검사할 문자열 |
+| <*검색 문자열*> | yes | String | 찾을 시작 문자열 |
 |||||
 
 | 반환 값 | Type | Description |
@@ -2699,7 +2699,7 @@ startsWith('<text>', '<searchText>')
 | true 또는 false  | 부울 | 시작 하위 문자열이 발견되면 true를 반환합니다. 발견되지 않으면 false를 반환합니다. |
 ||||
 
-*실시예 1*
+*예제 1*
 
 이 예제는 "hello world" 문자열이 "hello" 하위 문자열로 시작하는지 검사합니다.
 
@@ -2709,7 +2709,7 @@ startsWith('hello world', 'hello')
 
 그리고 다음 결과를 반환합니다. `true`
 
-*실시예 2*
+*예제 2*
 
 이 예제는 "hello world" 문자열이 "greetings" 하위 문자열로 시작하는지 검사합니다.
 
@@ -2731,7 +2731,7 @@ string(<value>)
 
 | 매개 변수 | 필수 | Type | Description |
 | --------- | -------- | ---- | ----------- |
-| <*값*> | yes | 모두 | 변환할 값 |
+| <*value*> | yes | 모두 | 변환할 값 |
 |||||
 
 | 반환 값 | Type | Description |
@@ -2739,7 +2739,7 @@ string(<value>)
 | <*문자열 값*> | String | 지정한 값에 대한 문자열 버전 |
 ||||
 
-*실시예 1*
+*예제 1*
 
 이 예제는 이 숫자에 대한 문자열 버전을 만듭니다.
 
@@ -2749,7 +2749,7 @@ string(10)
 
 그리고 다음 결과를 반환합니다. `"10"`
 
-*실시예 2*
+*예제 2*
 
 이 예제는 지정한 JSON 개체에 대한 문자열을 만들고 백슬래시 문자(\\)를 따옴표(")에 대한 이스케이프 문자로 사용합니다.
 
@@ -2771,8 +2771,8 @@ sub(<minuend>, <subtrahend>)
 
 | 매개 변수 | 필수 | Type | Description |
 | --------- | -------- | ---- | ----------- |
-| <*미뉴엔드*> | yes | 정수 또는 부동 소수점 수 | *감수*를 뺄 수 |
-| <*감수*> | yes | 정수 또는 부동 소수점 수 | *피감수*에서 뺄 수 |
+| <*minuend*> | yes | 정수 또는 부동 소수점 수 | *감수*를 뺄 수 |
+| <*subtrahend*> | yes | 정수 또는 부동 소수점 수 | *피감수*에서 뺄 수 |
 |||||
 
 | 반환 값 | Type | Description |
@@ -2803,7 +2803,7 @@ substring('<text>', <startIndex>, <length>)
 
 | 매개 변수 | 필수 | Type | Description |
 | --------- | -------- | ---- | ----------- |
-| <*텍스트*> | yes | String | 해당 문자를 원하는 문자열 |
+| <*text*> | yes | String | 해당 문자를 원하는 문자열 |
 | <*Startindex*> | yes | 정수 | 시작 위치 또는 인덱스 값으로 사용할 양수(양수)가 0과 같거나 크다. |
 | <*길이*> | yes | 정수 | 하위 문자열에 원하는 문자의 양수 |
 |||||
@@ -2836,10 +2836,10 @@ subtractFromTime('<timestamp>', <interval>, '<timeUnit>', '<format>'?)
 
 | 매개 변수 | 필수 | Type | Description |
 | --------- | -------- | ---- | ----------- |
-| <*타임 스탬프*> | yes | String | 타임스탬프를 포함하는 문자열 |
-| <*간격*> | yes | 정수 | 뺄 지정한 시간 단위 수 |
-| <*시간 단위*> | yes | String | *interval*과 함께 사용할 시간 단위: "Second", "Minute", "Hour", "Day", "Week", "Month", "Year" |
-| <*형식*> | 예 | String | [단일 형식 지정자](https://docs.microsoft.com/dotnet/standard/base-types/standard-date-and-time-format-strings) 또는 [사용자 지정 형식 패턴](https://docs.microsoft.com/dotnet/standard/base-types/custom-date-and-time-format-strings)입니다. 타임스탬프의 기본 형식은 ["o"](https://docs.microsoft.com/dotnet/standard/base-types/standard-date-and-time-format-strings)(yyyy-MM-ddTHH:mm:ss:fffffffK)입니다. 이 형식은 [ISO 8601](https://en.wikipedia.org/wiki/ISO_8601)을 준수하며 표준 시간대 정보를 보존합니다. |
+| <*timestamp*> | yes | String | 타임스탬프를 포함하는 문자열 |
+| <*interval*> | yes | 정수 | 뺄 지정한 시간 단위 수 |
+| <*timeUnit*> | yes | String | *interval*과 함께 사용할 시간 단위: "Second", "Minute", "Hour", "Day", "Week", "Month", "Year" |
+| <*format*> | 예 | String | [단일 형식 지정자](https://docs.microsoft.com/dotnet/standard/base-types/standard-date-and-time-format-strings) 또는 [사용자 지정 형식 패턴](https://docs.microsoft.com/dotnet/standard/base-types/custom-date-and-time-format-strings)입니다. 타임스탬프의 기본 형식은 ["o"](https://docs.microsoft.com/dotnet/standard/base-types/standard-date-and-time-format-strings)(yyyy-MM-ddTHH:mm:ss:fffffffK)입니다. 이 형식은 [ISO 8601](https://en.wikipedia.org/wiki/ISO_8601)을 준수하며 표준 시간대 정보를 보존합니다. |
 |||||
 
 | 반환 값 | Type | Description |
@@ -2847,7 +2847,7 @@ subtractFromTime('<timestamp>', <interval>, '<timeUnit>', '<format>'?)
 | <*업데이트된 타임스탬프*> | String | 타임스탬프 - 지정한 시간 단위 수 |
 ||||
 
-*실시예 1*
+*예제 1*
 
 이 예제는 이 타임스탬프에서 1일을 뺍니다.
 
@@ -2857,7 +2857,7 @@ subtractFromTime('2018-01-02T00:00:00Z', 1, 'Day')
 
 그리고 다음 결과를 반환합니다. `"2018-01-01T00:00:00:0000000Z"`
 
-*실시예 2*
+*예제 2*
 
 이 예제는 이 타임스탬프에서 1일을 뺍니다.
 
@@ -2916,7 +2916,7 @@ ticks('<timestamp>')
 
 | 매개 변수 | 필수 | Type | Description |
 | --------- | -------- | ---- | ----------- |
-| <*타임 스탬프*> | yes | String | 타임스탬프에 대한 문자열 |
+| <*timestamp*> | yes | String | 타임스탬프에 대한 문자열 |
 |||||
 
 | 반환 값 | Type | Description |
@@ -2936,7 +2936,7 @@ toLower('<text>')
 
 | 매개 변수 | 필수 | Type | Description |
 | --------- | -------- | ---- | ----------- |
-| <*텍스트*> | yes | String | 소문자 형식으로 반환할 문자열 |
+| <*text*> | yes | String | 소문자 형식으로 반환할 문자열 |
 |||||
 
 | 반환 값 | Type | Description |
@@ -2966,7 +2966,7 @@ toUpper('<text>')
 
 | 매개 변수 | 필수 | Type | Description |
 | --------- | -------- | ---- | ----------- |
-| <*텍스트*> | yes | String | 대문자 형식으로 반환할 문자열 |
+| <*text*> | yes | String | 대문자 형식으로 반환할 문자열 |
 |||||
 
 | 반환 값 | Type | Description |
@@ -2996,12 +2996,12 @@ trim('<text>')
 
 | 매개 변수 | 필수 | Type | Description |
 | --------- | -------- | ---- | ----------- |
-| <*텍스트*> | yes | String | 제거할 선행 및 후행 공백이 있는 문자열 |
+| <*text*> | yes | String | 제거할 선행 및 후행 공백이 있는 문자열 |
 |||||
 
 | 반환 값 | Type | Description |
 | ------------ | ---- | ----------- |
-| <*업데이트텍스트*> | String | 선행 또는 후행 공백이 없는 원래 문자열에 대한 업데이트된 버전 |
+| <*updatedText*> | String | 선행 또는 후행 공백이 없는 원래 문자열에 대한 업데이트된 버전 |
 ||||
 
 *예제*
@@ -3060,7 +3060,7 @@ uriComponent('<value>')
 
 | 매개 변수 | 필수 | Type | Description |
 | --------- | -------- | ---- | ----------- |
-| <*값*> | yes | String | URI 인코딩된 형식으로 변환할 문자열 |
+| <*value*> | yes | String | URI 인코딩된 형식으로 변환할 문자열 |
 |||||
 
 | 반환 값 | Type | Description |
@@ -3090,7 +3090,7 @@ uriComponentToBinary('<value>')
 
 | 매개 변수 | 필수 | Type | Description |
 | --------- | -------- | ---- | ----------- |
-| <*값*> | yes | String | 변환할 URI 인코딩된 문자열 |
+| <*value*> | yes | String | 변환할 URI 인코딩된 문자열 |
 |||||
 
 | 반환 값 | Type | Description |
@@ -3125,7 +3125,7 @@ uriComponentToString('<value>')
 
 | 매개 변수 | 필수 | Type | Description |
 | --------- | -------- | ---- | ----------- |
-| <*값*> | yes | String | 디코딩할 URI 인코딩된 문자열 |
+| <*value*> | yes | String | 디코딩할 URI 인코딩된 문자열 |
 |||||
 
 | 반환 값 | Type | Description |
@@ -3157,7 +3157,7 @@ utcNow('<format>')
 
 | 매개 변수 | 필수 | Type | Description |
 | --------- | -------- | ---- | ----------- |
-| <*형식*> | 예 | String | [단일 형식 지정자](https://docs.microsoft.com/dotnet/standard/base-types/standard-date-and-time-format-strings) 또는 [사용자 지정 형식 패턴](https://docs.microsoft.com/dotnet/standard/base-types/custom-date-and-time-format-strings)입니다. 타임스탬프의 기본 형식은 ["o"](https://docs.microsoft.com/dotnet/standard/base-types/standard-date-and-time-format-strings)(yyyy-MM-ddTHH:mm:ss:fffffffK)입니다. 이 형식은 [ISO 8601](https://en.wikipedia.org/wiki/ISO_8601)을 준수하며 표준 시간대 정보를 보존합니다. |
+| <*format*> | 예 | String | [단일 형식 지정자](https://docs.microsoft.com/dotnet/standard/base-types/standard-date-and-time-format-strings) 또는 [사용자 지정 형식 패턴](https://docs.microsoft.com/dotnet/standard/base-types/custom-date-and-time-format-strings)입니다. 타임스탬프의 기본 형식은 ["o"](https://docs.microsoft.com/dotnet/standard/base-types/standard-date-and-time-format-strings)(yyyy-MM-ddTHH:mm:ss:fffffffK)입니다. 이 형식은 [ISO 8601](https://en.wikipedia.org/wiki/ISO_8601)을 준수하며 표준 시간대 정보를 보존합니다. |
 |||||
 
 | 반환 값 | Type | Description |
@@ -3165,7 +3165,7 @@ utcNow('<format>')
 | <*현재 타임스탬프*> | String | 현재 날짜 및 시간 |
 ||||
 
-*실시예 1*
+*예제 1*
 
 오늘이 2018년 4월 15일 오후 1시 00분 00초라고 가정합니다.
 이 예제는 현재 타임스탬프를 가져옵니다.
@@ -3176,7 +3176,7 @@ utcNow()
 
 그리고 다음 결과를 반환합니다. `"2018-04-15T13:00:00.0000000Z"`
 
-*실시예 2*
+*예제 2*
 
 오늘이 2018년 4월 15일 오후 1시 00분 00초라고 가정합니다.
 이 예제는 선택적 "D" 형식을 사용하여 현재 타임스탬프를 가져옵니다.
@@ -3199,7 +3199,7 @@ xml('<value>')
 
 | 매개 변수 | 필수 | Type | Description |
 | --------- | -------- | ---- | ----------- |
-| <*값*> | yes | String | 변환할 JSON 개체를 가진 문자열 <p>JSON 개체는 배열일 수 없는 루트 속성 한 개만 가져야 합니다. <br>백슬래시 문자(\\)를 따옴표(")에 대한 이스케이프 문자로 사용합니다. |
+| <*value*> | yes | String | 변환할 JSON 개체를 가진 문자열 <p>JSON 개체는 배열일 수 없는 루트 속성 한 개만 가져야 합니다. <br>백슬래시 문자(\\)를 따옴표(")에 대한 이스케이프 문자로 사용합니다. |
 |||||
 
 | 반환 값 | Type | Description |
@@ -3207,7 +3207,7 @@ xml('<value>')
 | <*xml 버전*> | Object | 지정한 문자열 또는 JSON 개체에 대한 인코딩된 XML |
 ||||
 
-*실시예 1*
+*예제 1*
 
 이 예제는 이 문자열에 대한 XML 버전을 만들며, 이 문자열은 JSON 개체를 포함합니다.
 
@@ -3219,7 +3219,7 @@ xml('<value>')
 <name>Sophia Owen</name>
 ```
 
-*실시예 2*
+*예제 2*
 
 이 JSON 개체가 있다고 가정합니다.
 
@@ -3264,11 +3264,11 @@ xpath('<xml>', '<xpath>')
 | 반환 값 | Type | Description |
 | ------------ | ---- | ----------- |
 | <*xml 노드*> | XML | 단일 노드만이 지정한 XPath 식과 일치하는 경우 XML 노드 |
-| <*값*> | 모두 | 단일 값만이 지정한 XPath 식과 일치하는 경우 XML 노드의 값 |
+| <*value*> | 모두 | 단일 값만이 지정한 XPath 식과 일치하는 경우 XML 노드의 값 |
 | [<*xml-node1*>, <*xml-node2*>, ...] </br>또는 </br>[<*value1*>, <*value2*>, ...] | Array | 지정한 XPath 식과 일치하는 XML 노드 또는 값을 가진 배열 |
 ||||
 
-*실시예 1*
+*예제 1*
 
 예제 1 다음에 이 예제는 `<count></count>` 노드와 일치하는 노드를 찾고 `sum()` 함수를 사용하여 해당 노드 값을 더합니다.
 
@@ -3276,7 +3276,7 @@ xpath('<xml>', '<xpath>')
 
 그리고 다음 결과를 반환합니다. `30`
 
-*실시예 2*
+*예제 2*
 
 이 예제의 경우 두 식은 모두 지정한 인수의 `<location></location>` 노드와 일치하는 노드를 찾으며, 이 인수는 네임스페이스와 함께 XML을 포함합니다. 이 식은 백슬래시 문자(\\)를 따옴표(")에 대한 이스케이프 문자로 사용합니다.
 
@@ -3308,7 +3308,7 @@ xpath('<xml>', '<xpath>')
 <location xmlns="https://contoso.com">Paris</location>
 ```
 
-*실시예 3*
+*예제 3*
 
 예제 3 다음에 이 예제는 `<location></location>` 노드에서 값을 찾습니다.
 
